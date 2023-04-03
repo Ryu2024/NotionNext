@@ -11,7 +11,7 @@ export const Footer = (props) => {
     return currentYear
   })()
 
-  return <footer className="w-full bg-white px-6 border-t dark:border-hexo-black-gray dark:bg-hexo-black-gray ">
+  return <footer className="z-10 relative w-full bg-white px-6 border-t dark:border-hexo-black-gray dark:bg-hexo-black-gray ">
         <DarkModeButton className='text-center pt-4'/>
 
         <div className="container mx-auto max-w-4xl py-6 md:flex flex-wrap md:flex-no-wrap md:justify-between items-center text-sm">
@@ -21,7 +21,7 @@ export const Footer = (props) => {
                 {/* <a href="#" className="text-black no-underline hover:underline">Privacy Policy</a> */}
                 {BLOG.BEI_AN && (<a href="https://beian.miit.gov.cn/" className="text-black dark:text-gray-200 no-underline hover:underline ml-4">{BLOG.BEI_AN} </a>)}
                 <span className='dark:text-gray-200 no-underline ml-4'>
-  
+
                 </span>
             </div>
         </div>
